@@ -1,0 +1,49 @@
+{
+  "brand": "PROCORP",
+  "campaign": "Pioneros IA — Q2 2026",
+  "version": "1.0",
+  "date": "2026-04-07",
+  "color": {
+    "primary": "#0A0A0F",
+    "secondary": "#1A1A2E",
+    "accent": "#3B82F6",
+    "accent-secondary": "#84CC16",
+    "neutral-light": "#F8FAFC",
+    "neutral-medium": "#94A3B8",
+    "background-light": "#FAFBFC",
+    "alert": "#EF4444",
+    "gradient": {
+      "start": "#3B82F6",
+      "mid": "#8B5CF6",
+      "end": "#06B6D4",
+      "css": "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #06B6D4 100%)"
+    }
+  },
+  "font": {
+    "display": "Space Grotesk",
+    "body": "Inter",
+    "mono": "JetBrains Mono"
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px",
+    "2xl": "48px",
+    "3xl": "64px",
+    "4xl": "96px"
+  },
+  "radius": {
+    "sm": "6px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "full": "9999px"
+  },
+  "shadow": {
+    "card": "0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2)",
+    "elevated": "0 4px 12px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.3)",
+    "glow-accent": "0 0 20px rgba(59,130,246,0.15)"
+  }
+}

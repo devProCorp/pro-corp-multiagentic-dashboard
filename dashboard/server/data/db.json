@@ -1,0 +1,1036 @@
+{
+  "tasks": [
+    {
+      "id": "PROCORP-2026-001-T1",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Informe de Investigacion Competitiva",
+      "description": "Analizar competencia de PROCORP en el sector tecnologico. Identificar competidores directos e indirectos, estrategias, posicionamiento.",
+      "assignedAgent": "investigador-mercado",
+      "status": "REVIEW",
+      "priority": "HIGH",
+      "dependencies": [],
+      "deadline": "2026-04-09T18:00:00Z",
+      "outputFormat": "Markdown",
+      "outputPath": "/data/research/PROCORP/PROCORP-2026-001-investigacion-competitiva.md",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T10:00:00Z",
+      "updatedAt": "2026-04-07T11:00:00Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T2",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Estrategia de Campana Completa",
+      "description": "Disenar estrategia de marketing para captacion de clientes. Incluye posicionamiento, canales, tacticas, calendario y KPIs.",
+      "assignedAgent": "estratega-campanas",
+      "status": "REVIEW",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T1"
+      ],
+      "deadline": "2026-04-10T18:00:00Z",
+      "outputFormat": "Markdown",
+      "outputPath": "/campaigns/PROCORP/PROCORP-2026-001/PROCORP-2026-001-estrategia-campana.md",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T10:30:00Z",
+      "updatedAt": "2026-04-07T12:00:00Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T3",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Briefings Creativos para Produccion",
+      "description": "Generar briefings detallados para Contenido, Video y Diseno con instrucciones especificas de produccion.",
+      "assignedAgent": "estratega-campanas",
+      "status": "REVIEW",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T2"
+      ],
+      "deadline": "2026-04-10T18:00:00Z",
+      "outputFormat": "Markdown",
+      "outputPath": "/campaigns/PROCORP/PROCORP-2026-001/PROCORP-2026-001-briefings-creativos.md",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T11:00:00Z",
+      "updatedAt": "2026-04-07T12:30:00Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T4",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Sistema de Identidad Visual",
+      "description": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
+      "assignedAgent": "disenador-visual",
+      "status": "REVIEW",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T3"
+      ],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno + assets",
+      "outputPath": "/output/designs/PROCORP/",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T13:00:00Z",
+      "updatedAt": "2026-04-07T17:28:13.389Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T5",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Banco de Contenido: 20 Posts LinkedIn + Emails",
+      "description": "Redactar 20 posts LinkedIn, 5 emails de nurturing, lead magnet de 15 paginas, textos de landing page.",
+      "assignedAgent": "creador-contenido",
+      "status": "REVIEW",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T3",
+        "PROCORP-2026-001-T4"
+      ],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Markdown",
+      "outputPath": "/output/content/PROCORP/",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T13:00:00Z",
+      "updatedAt": "2026-04-07T17:42:50.349Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T6",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Produccion de Reels y Hero Video",
+      "description": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "assignedAgent": "creador-video",
+      "status": "BLOCKED",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T3",
+        "PROCORP-2026-001-T4"
+      ],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "outputPath": "/output/videos/PROCORP/",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T13:00:00Z",
+      "updatedAt": "2026-04-07T17:42:51.975Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T7",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Landing Page + Secuencia Email",
+      "description": "Implementar landing page optimizada para conversion y configurar secuencia automatizada de emails.",
+      "assignedAgent": "desarrollador-martech",
+      "status": "BLOCKED",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T4",
+        "PROCORP-2026-001-T5"
+      ],
+      "deadline": "2026-04-16T18:00:00Z",
+      "outputFormat": "Landing page desplegada + automatizacion",
+      "outputPath": "/output/landing-pages/PROCORP/",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T13:00:00Z",
+      "updatedAt": "2026-04-07T17:43:05.154Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T8",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Configuracion de Analytics y Tracking",
+      "description": "Setup de GA4, Meta Pixel, GTM y dashboard de metricas para medir resultados de campana.",
+      "assignedAgent": "analista-datos",
+      "status": "PENDING",
+      "priority": "MEDIUM",
+      "dependencies": [
+        "PROCORP-2026-001-T7"
+      ],
+      "deadline": "2026-04-18T18:00:00Z",
+      "outputFormat": "Dashboard + documentacion de tracking",
+      "outputPath": "/data/analytics/",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T13:00:00Z",
+      "updatedAt": "2026-04-07T13:00:00Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T9",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Cronograma Detallado y QA Pre-Lanzamiento",
+      "description": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de todos los entregables.",
+      "assignedAgent": "gestor-proyectos",
+      "status": "REVIEW",
+      "priority": "MEDIUM",
+      "dependencies": [
+        "PROCORP-2026-001-T3"
+      ],
+      "deadline": "2026-04-11T18:00:00Z",
+      "outputFormat": "Cronograma + Checklist QA",
+      "outputPath": "/campaigns/PROCORP/PROCORP-2026-001/",
+      "version": "v1.0",
+      "createdAt": "2026-04-07T13:00:00Z",
+      "updatedAt": "2026-04-07T17:24:21.970Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-001",
+      "from": "orquestador-director",
+      "to": "investigador-mercado",
+      "taskId": "PROCORP-2026-001-T1",
+      "priority": "HIGH",
+      "context": "Campana Pioneros IA — Captacion de clientes Q2 2026 para PROCORP",
+      "request": "Investigar competencia de PROCORP en el sector tecnologico. Identificar competidores directos e indirectos.",
+      "inputs": [],
+      "deadline": "2026-04-09T18:00:00Z",
+      "outputFormat": "Markdown con frontmatter YAML",
+      "timestamp": "2026-04-07T10:00:00Z"
+    },
+    {
+      "id": "msg-002",
+      "from": "orquestador-director",
+      "to": "estratega-campanas",
+      "taskId": "PROCORP-2026-001-T2",
+      "priority": "HIGH",
+      "context": "Campana Pioneros IA — Captacion de clientes Q2 2026 para PROCORP",
+      "request": "Disenar estrategia de campana completa basada en investigacion competitiva. Incluir canales, posicionamiento y KPIs.",
+      "inputs": [
+        "PROCORP-2026-001-investigacion-competitiva.md"
+      ],
+      "deadline": "2026-04-10T18:00:00Z",
+      "outputFormat": "Markdown con frontmatter YAML",
+      "timestamp": "2026-04-07T10:30:00Z"
+    },
+    {
+      "id": "msg-003",
+      "from": "orquestador-director",
+      "to": "estratega-campanas",
+      "taskId": "PROCORP-2026-001-T3",
+      "priority": "HIGH",
+      "context": "Campana Pioneros IA — Produccion de briefings para equipos creativos",
+      "request": "Generar briefings creativos detallados para Contenido, Video y Diseno.",
+      "inputs": [
+        "PROCORP-2026-001-estrategia-campana.md"
+      ],
+      "deadline": "2026-04-10T18:00:00Z",
+      "outputFormat": "Markdown con secciones por agente",
+      "timestamp": "2026-04-07T11:00:00Z"
+    },
+    {
+      "id": "msg-004",
+      "from": "orquestador-director",
+      "to": "disenador-visual",
+      "taskId": "PROCORP-2026-001-T4",
+      "priority": "HIGH",
+      "context": "Campana Pioneros IA — BLOQUEANTE: identidad visual requerida antes del 12 de Abril",
+      "request": "Crear sistema de identidad visual completo para la campana. Este es el entregable que bloquea toda la produccion.",
+      "inputs": [
+        "PROCORP-2026-001-briefings-creativos.md"
+      ],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno con paleta, tipografia y templates",
+      "timestamp": "2026-04-07T13:00:00Z"
+    },
+    {
+      "id": "msg-l6gM7AC4",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "MEDIUM",
+      "context": "Somos pro corp y quiero vender sistemas de automatizacion",
+      "request": "Quiero que crees un video profesional con tus conocimientos para captar clientes usando veo3 usando el mcp de google de claude ",
+      "inputs": [],
+      "deadline": "2026-04-30T23:50",
+      "outputFormat": "Markdown",
+      "timestamp": "2026-04-07T16:50:31.468Z"
+    },
+    {
+      "id": "msg-exec-1775580935960",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "timestamp": "2026-04-07T16:55:35.960Z"
+    },
+    {
+      "id": "msg-pipe-1775581991939-8qcgf",
+      "from": "orquestador-director",
+      "to": "gestor-proyectos",
+      "taskId": "PROCORP-2026-001-T9",
+      "priority": "MEDIUM",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de todos los entregables.",
+      "inputs": [],
+      "deadline": "2026-04-11T18:00:00Z",
+      "outputFormat": "Cronograma + Checklist QA",
+      "timestamp": "2026-04-07T17:13:11.940Z"
+    },
+    {
+      "id": "msg-exec-1775581991947",
+      "from": "orquestador-director",
+      "to": "gestor-proyectos",
+      "taskId": "PROCORP-2026-001-T9",
+      "priority": "MEDIUM",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de todos los entregables.",
+      "inputs": [],
+      "deadline": "2026-04-11T18:00:00Z",
+      "outputFormat": "Cronograma + Checklist QA",
+      "timestamp": "2026-04-07T17:13:11.947Z"
+    },
+    {
+      "id": "msg-pipe-1775581991954-mmrq3",
+      "from": "orquestador-director",
+      "to": "disenador-visual",
+      "taskId": "PROCORP-2026-001-T4",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
+      "inputs": [],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno + assets",
+      "timestamp": "2026-04-07T17:13:11.955Z"
+    },
+    {
+      "id": "msg-exec-1775581991956",
+      "from": "orquestador-director",
+      "to": "disenador-visual",
+      "taskId": "PROCORP-2026-001-T4",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
+      "inputs": [],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno + assets",
+      "timestamp": "2026-04-07T17:13:11.962Z"
+    },
+    {
+      "id": "msg-pipe-1775582385923-24fb3",
+      "from": "orquestador-director",
+      "to": "gestor-proyectos",
+      "taskId": "PROCORP-2026-001-T9",
+      "priority": "MEDIUM",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de todos los entregables.",
+      "inputs": [],
+      "deadline": "2026-04-11T18:00:00Z",
+      "outputFormat": "Cronograma + Checklist QA",
+      "timestamp": "2026-04-07T17:19:45.924Z"
+    },
+    {
+      "id": "msg-exec-1775582385928",
+      "from": "orquestador-director",
+      "to": "gestor-proyectos",
+      "taskId": "PROCORP-2026-001-T9",
+      "priority": "MEDIUM",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de todos los entregables.",
+      "inputs": [],
+      "deadline": "2026-04-11T18:00:00Z",
+      "outputFormat": "Cronograma + Checklist QA",
+      "timestamp": "2026-04-07T17:19:45.932Z"
+    },
+    {
+      "id": "msg-pipe-1775582385940-qrwem",
+      "from": "orquestador-director",
+      "to": "disenador-visual",
+      "taskId": "PROCORP-2026-001-T4",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
+      "inputs": [],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno + assets",
+      "timestamp": "2026-04-07T17:19:45.941Z"
+    },
+    {
+      "id": "msg-exec-1775582385943",
+      "from": "orquestador-director",
+      "to": "disenador-visual",
+      "taskId": "PROCORP-2026-001-T4",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
+      "inputs": [],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno + assets",
+      "timestamp": "2026-04-07T17:19:45.943Z"
+    },
+    {
+      "id": "msg-exec-1775582529515",
+      "from": "orquestador-director",
+      "to": "gestor-proyectos",
+      "taskId": "PROCORP-2026-001-T9",
+      "priority": "MEDIUM",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de todos los entregables.",
+      "inputs": [],
+      "deadline": "2026-04-11T18:00:00Z",
+      "outputFormat": "Cronograma + Checklist QA",
+      "timestamp": "2026-04-07T17:22:09.515Z"
+    },
+    {
+      "id": "msg-pipe-1775582679596-hb56l",
+      "from": "orquestador-director",
+      "to": "disenador-visual",
+      "taskId": "PROCORP-2026-001-T4",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
+      "inputs": [],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno + assets",
+      "timestamp": "2026-04-07T17:24:39.596Z"
+    },
+    {
+      "id": "msg-exec-1775582679600",
+      "from": "orquestador-director",
+      "to": "disenador-visual",
+      "taskId": "PROCORP-2026-001-T4",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
+      "inputs": [],
+      "deadline": "2026-04-12T18:00:00Z",
+      "outputFormat": "Especificaciones de diseno + assets",
+      "timestamp": "2026-04-07T17:24:39.600Z"
+    },
+    {
+      "id": "msg-pipe-1775582899641-t0f5m",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "timestamp": "2026-04-07T17:28:19.641Z"
+    },
+    {
+      "id": "msg-exec-1775582899649",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "timestamp": "2026-04-07T17:28:19.649Z"
+    },
+    {
+      "id": "msg-pipe-1775582899655-kpykt",
+      "from": "orquestador-director",
+      "to": "creador-contenido",
+      "taskId": "PROCORP-2026-001-T5",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Redactar 20 posts LinkedIn, 5 emails de nurturing, lead magnet de 15 paginas, textos de landing page.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Markdown",
+      "timestamp": "2026-04-07T17:28:19.655Z"
+    },
+    {
+      "id": "msg-exec-1775582899658",
+      "from": "orquestador-director",
+      "to": "creador-contenido",
+      "taskId": "PROCORP-2026-001-T5",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Redactar 20 posts LinkedIn, 5 emails de nurturing, lead magnet de 15 paginas, textos de landing page.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Markdown",
+      "timestamp": "2026-04-07T17:28:19.658Z"
+    },
+    {
+      "id": "msg-pipe-1775583779752-wnnz8",
+      "from": "orquestador-director",
+      "to": "desarrollador-martech",
+      "taskId": "PROCORP-2026-001-T7",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Implementar landing page optimizada para conversion y configurar secuencia automatizada de emails.",
+      "inputs": [],
+      "deadline": "2026-04-16T18:00:00Z",
+      "outputFormat": "Landing page desplegada + automatizacion",
+      "timestamp": "2026-04-07T17:42:59.752Z"
+    },
+    {
+      "id": "msg-exec-1775583779760",
+      "from": "orquestador-director",
+      "to": "desarrollador-martech",
+      "taskId": "PROCORP-2026-001-T7",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Implementar landing page optimizada para conversion y configurar secuencia automatizada de emails.",
+      "inputs": [],
+      "deadline": "2026-04-16T18:00:00Z",
+      "outputFormat": "Landing page desplegada + automatizacion",
+      "timestamp": "2026-04-07T17:42:59.760Z"
+    }
+  ],
+  "agentStatus": {
+    "orquestador-director": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T13:00:00Z"
+    },
+    "investigador-mercado": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T13:00:00Z"
+    },
+    "estratega-campanas": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T13:00:00Z"
+    },
+    "creador-contenido": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T17:42:50.353Z"
+    },
+    "creador-video": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T17:42:51.976Z"
+    },
+    "disenador-visual": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T17:28:13.390Z"
+    },
+    "desarrollador-martech": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T17:43:05.154Z"
+    },
+    "analista-datos": {
+      "status": "busy",
+      "activeTasks": 1,
+      "lastActivity": "2026-04-07T13:00:00Z"
+    },
+    "gestor-proyectos": {
+      "status": "idle",
+      "activeTasks": 0,
+      "lastActivity": "2026-04-07T17:24:21.974Z"
+    }
+  },
+  "activityLog": [
+    {
+      "id": "log-001",
+      "timestamp": "2026-04-07T10:00:00Z",
+      "agent": "orquestador-director",
+      "action": "task_created",
+      "taskId": "PROCORP-2026-001-T1",
+      "details": {
+        "title": "Informe de Investigacion Competitiva"
+      }
+    },
+    {
+      "id": "log-002",
+      "timestamp": "2026-04-07T10:30:00Z",
+      "agent": "orquestador-director",
+      "action": "task_created",
+      "taskId": "PROCORP-2026-001-T2",
+      "details": {
+        "title": "Estrategia de Campana Completa"
+      }
+    },
+    {
+      "id": "log-003",
+      "timestamp": "2026-04-07T11:00:00Z",
+      "agent": "investigador-mercado",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T1",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-004",
+      "timestamp": "2026-04-07T11:05:00Z",
+      "agent": "investigador-mercado",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T1",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-005",
+      "timestamp": "2026-04-07T11:10:00Z",
+      "agent": "estratega-campanas",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T2",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-006",
+      "timestamp": "2026-04-07T12:00:00Z",
+      "agent": "estratega-campanas",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T2",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-007",
+      "timestamp": "2026-04-07T12:30:00Z",
+      "agent": "estratega-campanas",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T3",
+      "details": {
+        "from": "PENDING",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-008",
+      "timestamp": "2026-04-07T13:00:00Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "to": "disenador-visual",
+        "request": "Crear sistema de identidad visual completo para la campana"
+      }
+    },
+    {
+      "id": "log-1775580631469",
+      "timestamp": "2026-04-07T16:50:31.469Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Quiero que crees un video profesional con tus conocimientos para captar clientes"
+      }
+    },
+    {
+      "id": "log-1775580935958",
+      "timestamp": "2026-04-07T16:55:35.958Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775580935960",
+      "timestamp": "2026-04-07T16:55:35.960Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min."
+      }
+    },
+    {
+      "id": "log-1775581563136",
+      "timestamp": "2026-04-07T17:06:03.136Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775581991940",
+      "timestamp": "2026-04-07T17:13:11.940Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "to": "gestor-proyectos",
+        "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de "
+      }
+    },
+    {
+      "id": "log-1775581991946",
+      "timestamp": "2026-04-07T17:13:11.946Z",
+      "agent": "gestor-proyectos",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775581991947",
+      "timestamp": "2026-04-07T17:13:11.947Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "to": "gestor-proyectos",
+        "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de "
+      }
+    },
+    {
+      "id": "log-1775581991955",
+      "timestamp": "2026-04-07T17:13:11.955Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "to": "disenador-visual",
+        "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipograf"
+      }
+    },
+    {
+      "id": "log-1775581991956",
+      "timestamp": "2026-04-07T17:13:11.956Z",
+      "agent": "disenador-visual",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775581991962",
+      "timestamp": "2026-04-07T17:13:11.962Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "to": "disenador-visual",
+        "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipograf"
+      }
+    },
+    {
+      "id": "log-1775582055397",
+      "timestamp": "2026-04-07T17:14:15.397Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "REVIEW",
+        "to": "PENDING"
+      }
+    },
+    {
+      "id": "log-1775582356457",
+      "timestamp": "2026-04-07T17:19:16.457Z",
+      "agent": "disenador-visual",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "PENDING"
+      }
+    },
+    {
+      "id": "log-1775582356469",
+      "timestamp": "2026-04-07T17:19:16.469Z",
+      "agent": "gestor-proyectos",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "PENDING"
+      }
+    },
+    {
+      "id": "log-1775582385924",
+      "timestamp": "2026-04-07T17:19:45.924Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "to": "gestor-proyectos",
+        "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de "
+      }
+    },
+    {
+      "id": "log-1775582385927",
+      "timestamp": "2026-04-07T17:19:45.927Z",
+      "agent": "gestor-proyectos",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775582385932",
+      "timestamp": "2026-04-07T17:19:45.932Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "to": "gestor-proyectos",
+        "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de "
+      }
+    },
+    {
+      "id": "log-1775582385941",
+      "timestamp": "2026-04-07T17:19:45.941Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "to": "disenador-visual",
+        "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipograf"
+      }
+    },
+    {
+      "id": "log-1775582385942",
+      "timestamp": "2026-04-07T17:19:45.942Z",
+      "agent": "disenador-visual",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775582385943",
+      "timestamp": "2026-04-07T17:19:45.943Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "to": "disenador-visual",
+        "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipograf"
+      }
+    },
+    {
+      "id": "log-1775582529514",
+      "timestamp": "2026-04-07T17:22:09.514Z",
+      "agent": "gestor-proyectos",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775582529515",
+      "timestamp": "2026-04-07T17:22:09.515Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "to": "gestor-proyectos",
+        "request": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de "
+      }
+    },
+    {
+      "id": "log-1775582661972",
+      "timestamp": "2026-04-07T17:24:21.972Z",
+      "agent": "gestor-proyectos",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T9",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775582679596",
+      "timestamp": "2026-04-07T17:24:39.596Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "to": "disenador-visual",
+        "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipograf"
+      }
+    },
+    {
+      "id": "log-1775582679599",
+      "timestamp": "2026-04-07T17:24:39.599Z",
+      "agent": "disenador-visual",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775582679600",
+      "timestamp": "2026-04-07T17:24:39.600Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "to": "disenador-visual",
+        "request": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipograf"
+      }
+    },
+    {
+      "id": "log-1775582893389",
+      "timestamp": "2026-04-07T17:28:13.389Z",
+      "agent": "disenador-visual",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T4",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775582899641",
+      "timestamp": "2026-04-07T17:28:19.641Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min."
+      }
+    },
+    {
+      "id": "log-1775582899647",
+      "timestamp": "2026-04-07T17:28:19.647Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775582899649",
+      "timestamp": "2026-04-07T17:28:19.649Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min."
+      }
+    },
+    {
+      "id": "log-1775582899655",
+      "timestamp": "2026-04-07T17:28:19.655Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T5",
+      "details": {
+        "to": "creador-contenido",
+        "request": "Redactar 20 posts LinkedIn, 5 emails de nurturing, lead magnet de 15 paginas, te"
+      }
+    },
+    {
+      "id": "log-1775582899657",
+      "timestamp": "2026-04-07T17:28:19.657Z",
+      "agent": "creador-contenido",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T5",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775582899658",
+      "timestamp": "2026-04-07T17:28:19.658Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T5",
+      "details": {
+        "to": "creador-contenido",
+        "request": "Redactar 20 posts LinkedIn, 5 emails de nurturing, lead magnet de 15 paginas, te"
+      }
+    },
+    {
+      "id": "log-1775583770349",
+      "timestamp": "2026-04-07T17:42:50.350Z",
+      "agent": "creador-contenido",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T5",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775583771975",
+      "timestamp": "2026-04-07T17:42:51.976Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "BLOCKED"
+      }
+    },
+    {
+      "id": "log-1775583779752",
+      "timestamp": "2026-04-07T17:42:59.752Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T7",
+      "details": {
+        "to": "desarrollador-martech",
+        "request": "Implementar landing page optimizada para conversion y configurar secuencia autom"
+      }
+    },
+    {
+      "id": "log-1775583779758",
+      "timestamp": "2026-04-07T17:42:59.758Z",
+      "agent": "desarrollador-martech",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T7",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775583779760",
+      "timestamp": "2026-04-07T17:42:59.760Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T7",
+      "details": {
+        "to": "desarrollador-martech",
+        "request": "Implementar landing page optimizada para conversion y configurar secuencia autom"
+      }
+    },
+    {
+      "id": "log-1775583785154",
+      "timestamp": "2026-04-07T17:43:05.154Z",
+      "agent": "desarrollador-martech",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T7",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "BLOCKED"
+      }
+    }
+  ]
+}
