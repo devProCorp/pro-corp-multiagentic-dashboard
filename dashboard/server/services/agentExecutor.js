@@ -8,6 +8,7 @@ import { parseMarkdownFile } from './fileParser.js'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const PROJECT_ROOT = path.resolve(__dirname, '..', '..', '..')
 const LOGS_DIR = path.join(__dirname, '..', 'data', 'logs')
+const AGENTS_DIR = path.join(PROJECT_ROOT, '.claude', 'agents')
 
 // Map agent slugs to their .claude/agents/ file names
 const AGENT_MAP = {
@@ -79,7 +80,8 @@ export async function executeTask(taskId) {
     const args = [
       '-p', prompt,
       '--output-format', 'text',
-      '--max-turns', '30',
+      '--max-turns', agentSlug === 'creador-video' ? '200' : '30',
+      '--dangerously-skip-permissions',
     ]
 
     const proc = spawn('claude', args, {
@@ -181,10 +183,30 @@ function buildTaskContext(task) {
   return context
 }
 
-function buildPrompt(task, context) {
-  let prompt = `Eres un agente especializado de PROCORPMDigital. Debes ejecutar la siguiente tarea:
+function loadAgentSystemPrompt(agentSlug) {
+  const agentFile = path.join(AGENTS_DIR, `${AGENT_MAP[agentSlug]}.md`)
+  if (fs.existsSync(agentFile)) {
+    const raw = fs.readFileSync(agentFile, 'utf-8')
+    // Strip frontmatter (between --- markers) to get just the prompt body
+    const fmMatch = raw.match(/^---\n[\s\S]*?\n---\n([\s\S]*)$/)
+    return fmMatch ? fmMatch[1].trim() : raw
+  }
+  return null
+}
 
-## Tarea
+function buildPrompt(task, context) {
+  // Load the agent's specialized system prompt from .claude/agents/
+  const agentPrompt = loadAgentSystemPrompt(task.assignedAgent)
+
+  let prompt = ''
+
+  if (agentPrompt) {
+    prompt += `${agentPrompt}\n\n---\n\n`
+  } else {
+    prompt += `Eres un agente especializado de PROCORPMDigital.\n\n`
+  }
+
+  prompt += `## Tarea Asignada
 - **ID**: ${task.id}
 - **Titulo**: ${task.title}
 - **Descripcion**: ${task.description}
@@ -194,12 +216,13 @@ function buildPrompt(task, context) {
 - **Formato de salida**: ${task.outputFormat}
 - **Deadline**: ${task.deadline}
 
-## Instrucciones
+## Instrucciones de Ejecucion
 1. Ejecuta la tarea descrita de forma completa y profesional
 2. Todo el contenido debe estar en espanol
 3. Incluye frontmatter YAML con metadatos (agente, task_id, version, fecha, cliente, campana, estado)
 4. Guarda los archivos resultantes en la carpeta correspondiente del proyecto
 5. Se especifico, detallado y accionable en tus entregables
+6. Si tienes herramientas de navegador (browser_navigate, browser_click, etc.), USALAS para producir contenido real
 `
 
   if (context.briefing) {

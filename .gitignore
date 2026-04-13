@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Build & Cache
+.vite/
+dist/
+.cache/
+
+# macOS
+.DS_Store
+
+# Playwright MCP temp files
+.playwright-mcp/
+
+# Generated videos (too large for git)
+output/videos/**/*.mp4
+output/videos/**/screenshots/
+
+# Logs
+dashboard/server/data/logs/*.log
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+.playwright-google-auth.json
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Misc
+yarn.lock
+*.tgz

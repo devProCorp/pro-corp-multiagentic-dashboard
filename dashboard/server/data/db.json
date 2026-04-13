@@ -7,7 +7,7 @@
       "title": "Informe de Investigacion Competitiva",
       "description": "Analizar competencia de PROCORP en el sector tecnologico. Identificar competidores directos e indirectos, estrategias, posicionamiento.",
       "assignedAgent": "investigador-mercado",
-      "status": "REVIEW",
+      "status": "PENDING",
       "priority": "HIGH",
       "dependencies": [],
       "deadline": "2026-04-09T18:00:00Z",
@@ -15,7 +15,7 @@
       "outputPath": "/data/research/PROCORP/PROCORP-2026-001-investigacion-competitiva.md",
       "version": "v1.0",
       "createdAt": "2026-04-07T10:00:00Z",
-      "updatedAt": "2026-04-07T11:00:00Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T2",
@@ -24,7 +24,7 @@
       "title": "Estrategia de Campana Completa",
       "description": "Disenar estrategia de marketing para captacion de clientes. Incluye posicionamiento, canales, tacticas, calendario y KPIs.",
       "assignedAgent": "estratega-campanas",
-      "status": "REVIEW",
+      "status": "PENDING",
       "priority": "HIGH",
       "dependencies": [
         "PROCORP-2026-001-T1"
@@ -34,7 +34,7 @@
       "outputPath": "/campaigns/PROCORP/PROCORP-2026-001/PROCORP-2026-001-estrategia-campana.md",
       "version": "v1.0",
       "createdAt": "2026-04-07T10:30:00Z",
-      "updatedAt": "2026-04-07T12:00:00Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T3",
@@ -43,7 +43,7 @@
       "title": "Briefings Creativos para Produccion",
       "description": "Generar briefings detallados para Contenido, Video y Diseno con instrucciones especificas de produccion.",
       "assignedAgent": "estratega-campanas",
-      "status": "REVIEW",
+      "status": "PENDING",
       "priority": "HIGH",
       "dependencies": [
         "PROCORP-2026-001-T2"
@@ -53,7 +53,7 @@
       "outputPath": "/campaigns/PROCORP/PROCORP-2026-001/PROCORP-2026-001-briefings-creativos.md",
       "version": "v1.0",
       "createdAt": "2026-04-07T11:00:00Z",
-      "updatedAt": "2026-04-07T12:30:00Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T4",
@@ -62,7 +62,7 @@
       "title": "Sistema de Identidad Visual",
       "description": "Crear identidad visual completa para campana Pioneros IA: logo, paleta, tipografia, templates.",
       "assignedAgent": "disenador-visual",
-      "status": "REVIEW",
+      "status": "PENDING",
       "priority": "HIGH",
       "dependencies": [
         "PROCORP-2026-001-T3"
@@ -72,7 +72,7 @@
       "outputPath": "/output/designs/PROCORP/",
       "version": "v1.0",
       "createdAt": "2026-04-07T13:00:00Z",
-      "updatedAt": "2026-04-07T17:28:13.389Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T5",
@@ -81,7 +81,7 @@
       "title": "Banco de Contenido: 20 Posts LinkedIn + Emails",
       "description": "Redactar 20 posts LinkedIn, 5 emails de nurturing, lead magnet de 15 paginas, textos de landing page.",
       "assignedAgent": "creador-contenido",
-      "status": "REVIEW",
+      "status": "PENDING",
       "priority": "HIGH",
       "dependencies": [
         "PROCORP-2026-001-T3",
@@ -92,7 +92,7 @@
       "outputPath": "/output/content/PROCORP/",
       "version": "v1.0",
       "createdAt": "2026-04-07T13:00:00Z",
-      "updatedAt": "2026-04-07T17:42:50.349Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T6",
@@ -101,7 +101,7 @@
       "title": "Produccion de Reels y Hero Video",
       "description": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
       "assignedAgent": "creador-video",
-      "status": "BLOCKED",
+      "status": "PENDING",
       "priority": "HIGH",
       "dependencies": [
         "PROCORP-2026-001-T3",
@@ -112,7 +112,7 @@
       "outputPath": "/output/videos/PROCORP/",
       "version": "v1.0",
       "createdAt": "2026-04-07T13:00:00Z",
-      "updatedAt": "2026-04-07T17:42:51.975Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T7",
@@ -121,7 +121,7 @@
       "title": "Landing Page + Secuencia Email",
       "description": "Implementar landing page optimizada para conversion y configurar secuencia automatizada de emails.",
       "assignedAgent": "desarrollador-martech",
-      "status": "BLOCKED",
+      "status": "PENDING",
       "priority": "HIGH",
       "dependencies": [
         "PROCORP-2026-001-T4",
@@ -132,7 +132,7 @@
       "outputPath": "/output/landing-pages/PROCORP/",
       "version": "v1.0",
       "createdAt": "2026-04-07T13:00:00Z",
-      "updatedAt": "2026-04-07T17:43:05.154Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T8",
@@ -151,7 +151,7 @@
       "outputPath": "/data/analytics/",
       "version": "v1.0",
       "createdAt": "2026-04-07T13:00:00Z",
-      "updatedAt": "2026-04-07T13:00:00Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     },
     {
       "id": "PROCORP-2026-001-T9",
@@ -160,7 +160,7 @@
       "title": "Cronograma Detallado y QA Pre-Lanzamiento",
       "description": "Crear cronograma detallado del lanzamiento y checklist de control de calidad de todos los entregables.",
       "assignedAgent": "gestor-proyectos",
-      "status": "REVIEW",
+      "status": "PENDING",
       "priority": "MEDIUM",
       "dependencies": [
         "PROCORP-2026-001-T3"
@@ -170,7 +170,45 @@
       "outputPath": "/campaigns/PROCORP/PROCORP-2026-001/",
       "version": "v1.0",
       "createdAt": "2026-04-07T13:00:00Z",
-      "updatedAt": "2026-04-07T17:24:21.970Z"
+      "updatedAt": "2026-04-10T16:36:15.490Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T10",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Produccion de Videos en Google Flow (Playwright)",
+      "description": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "assignedAgent": "creador-video",
+      "status": "PENDING",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T6"
+      ],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "outputPath": "/output/videos/PROCORP/produced/",
+      "version": "v1.0",
+      "createdAt": "2026-04-08T13:00:00Z",
+      "updatedAt": "2026-04-10T16:36:15.490Z"
+    },
+    {
+      "id": "PROCORP-2026-001-T11",
+      "campaignId": "PROCORP-2026-001",
+      "clientSlug": "PROCORP",
+      "title": "Composicion Final de Video con Remotion",
+      "description": "Tomar todos los clips de video descargados en output/videos/PROCORP-2026-001/ y combinarlos en un video final usando Remotion. Ejecutar: cd tools/remotion-composer && npx tsx render.ts --input-dir ../../output/videos/PROCORP-2026-001 --output-file ../../output/videos/PROCORP/final/hero-video-final.mp4",
+      "assignedAgent": "desarrollador-martech",
+      "status": "PENDING",
+      "priority": "HIGH",
+      "dependencies": [
+        "PROCORP-2026-001-T10"
+      ],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Video MP4 final",
+      "outputPath": "/output/videos/PROCORP/final/",
+      "version": "v1.0",
+      "createdAt": "2026-04-10T14:52:15.655Z",
+      "updatedAt": "2026-04-10T16:36:15.490Z"
     }
   ],
   "messages": [
@@ -478,6 +516,266 @@
       "deadline": "2026-04-16T18:00:00Z",
       "outputFormat": "Landing page desplegada + automatizacion",
       "timestamp": "2026-04-07T17:42:59.760Z"
+    },
+    {
+      "id": "msg-pipe-1775668223539-2zgy0",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "timestamp": "2026-04-08T17:10:23.540Z"
+    },
+    {
+      "id": "msg-exec-1775668223551",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "timestamp": "2026-04-08T17:10:23.551Z"
+    },
+    {
+      "id": "msg-pipe-1775668223569-qtdo6",
+      "from": "orquestador-director",
+      "to": "desarrollador-martech",
+      "taskId": "PROCORP-2026-001-T7",
+      "priority": "HIGH",
+      "context": "Pipeline automatico — Campana PROCORP-2026-001",
+      "request": "Implementar landing page optimizada para conversion y configurar secuencia automatizada de emails.",
+      "inputs": [],
+      "deadline": "2026-04-16T18:00:00Z",
+      "outputFormat": "Landing page desplegada + automatizacion",
+      "timestamp": "2026-04-08T17:10:23.570Z"
+    },
+    {
+      "id": "msg-exec-1775668223574",
+      "from": "orquestador-director",
+      "to": "desarrollador-martech",
+      "taskId": "PROCORP-2026-001-T7",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Implementar landing page optimizada para conversion y configurar secuencia automatizada de emails.",
+      "inputs": [],
+      "deadline": "2026-04-16T18:00:00Z",
+      "outputFormat": "Landing page desplegada + automatizacion",
+      "timestamp": "2026-04-08T17:10:23.574Z"
+    },
+    {
+      "id": "msg-exec-1775669480223",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "timestamp": "2026-04-08T17:31:20.223Z"
+    },
+    {
+      "id": "msg-exec-1775669808688",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T6",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Guiones + Storyboards",
+      "timestamp": "2026-04-08T17:36:48.689Z"
+    },
+    {
+      "id": "msg-exec-1775675168961",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para abrir Google Flow (labs.google/flow) y producir los videos usando los guiones y prompts ya generados en T6. Leer los archivos de output/videos/PROCORP/PROCORP-2026-001/ para obtener los prompts de cada escena. Producir primero el Hero Video y luego al menos 2 Reels. NO generes guiones, ya estan hechos. Ve directo a Google Flow con browser_navigate y usa los prompts que encuentres en los archivos.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-08T19:06:08.961Z"
+    },
+    {
+      "id": "msg-exec-1775675432350",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para abrir Google Flow (labs.google/flow) y producir los videos usando los guiones y prompts ya generados en T6. Leer los archivos de output/videos/PROCORP/PROCORP-2026-001/ para obtener los prompts de cada escena. Producir primero el Hero Video y luego al menos 2 Reels. NO generes guiones, ya estan hechos. Ve directo a Google Flow con browser_navigate y usa los prompts que encuentres en los archivos.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-08T19:10:32.351Z"
+    },
+    {
+      "id": "msg-exec-1775675716065",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para abrir Google Flow (labs.google/flow) y producir los videos usando los guiones y prompts ya generados en T6. Leer los archivos de output/videos/PROCORP/PROCORP-2026-001/ para obtener los prompts de cada escena. Producir primero el Hero Video y luego al menos 2 Reels. NO generes guiones, ya estan hechos. Ve directo a Google Flow con browser_navigate y usa los prompts que encuentres en los archivos.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-08T19:15:16.065Z"
+    },
+    {
+      "id": "msg-exec-1775675997347",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "INSTRUCCION CRITICA: Tu UNICA tarea es producir videos en Google Flow usando Playwright. Los guiones YA existen en output/videos/PROCORP/PROCORP-2026-001/. Lee esos archivos, extrae los prompts de Google Flow (estan en ingles), y luego usa browser_navigate para ir a https://labs.google/flow y genera los videos. Ya tienes sesion de Google activa en el navegador. Empieza con el Hero Video.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-08T19:19:57.348Z"
+    },
+    {
+      "id": "msg-exec-1775688336705",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "INSTRUCCION CRITICA: Tu UNICA tarea es producir videos en Google Flow usando Playwright. Los guiones YA existen en output/videos/PROCORP/PROCORP-2026-001/. Lee esos archivos, extrae los prompts de Google Flow (estan en ingles), y luego usa browser_navigate para ir a https://labs.google/flow y genera los videos. Ya tienes sesion de Google activa en el navegador. Empieza con el Hero Video.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-08T22:45:36.706Z"
+    },
+    {
+      "id": "msg-exec-1775750895884",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-09T16:08:15.885Z"
+    },
+    {
+      "id": "msg-exec-1775751486024",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-09T16:18:06.025Z"
+    },
+    {
+      "id": "msg-exec-1775751987091",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-09T16:26:27.092Z"
+    },
+    {
+      "id": "msg-exec-1775753012533",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-09T16:43:32.534Z"
+    },
+    {
+      "id": "msg-exec-1775753439169",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-09T16:50:39.169Z"
+    },
+    {
+      "id": "msg-exec-1775830243706",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-10T14:10:43.707Z"
+    },
+    {
+      "id": "msg-exec-1775832740526",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-10T14:52:20.526Z"
+    },
+    {
+      "id": "msg-exec-1775835091548",
+      "from": "orquestador-director",
+      "to": "desarrollador-martech",
+      "taskId": "PROCORP-2026-001-T11",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Tomar todos los clips de video descargados en output/videos/PROCORP-2026-001/ y combinarlos en un video final usando Remotion. Ejecutar: cd tools/remotion-composer && npx tsx render.ts --input-dir ../../output/videos/PROCORP-2026-001 --output-file ../../output/videos/PROCORP/final/hero-video-final.mp4",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Video MP4 final",
+      "timestamp": "2026-04-10T15:31:31.548Z"
+    },
+    {
+      "id": "msg-exec-1775838839684",
+      "from": "orquestador-director",
+      "to": "creador-video",
+      "taskId": "PROCORP-2026-001-T10",
+      "priority": "HIGH",
+      "context": "Ejecucion automatica desde dashboard — Campana PROCORP-2026-001",
+      "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los videos de la campana PROCORP-2026-001 usando Veo 3.1 Fast. Los guiones y prompts estan en output/videos/PROCORP/PROCORP-2026-001/. Usar modo VIDEO (no imagen). La sesion de Google esta guardada en ~/.playwright-google-auth.json y ya esta configurada en el MCP.",
+      "inputs": [],
+      "deadline": "2026-04-14T18:00:00Z",
+      "outputFormat": "Videos generados en Google Flow",
+      "timestamp": "2026-04-10T16:33:59.684Z"
     }
   ],
   "agentStatus": {
@@ -504,7 +802,7 @@
     "creador-video": {
       "status": "idle",
       "activeTasks": 0,
-      "lastActivity": "2026-04-07T17:42:51.976Z"
+      "lastActivity": "2026-04-10T16:35:29.604Z"
     },
     "disenador-visual": {
       "status": "idle",
@@ -514,7 +812,7 @@
     "desarrollador-martech": {
       "status": "idle",
       "activeTasks": 0,
-      "lastActivity": "2026-04-07T17:43:05.154Z"
+      "lastActivity": "2026-04-10T15:35:06.843Z"
     },
     "analista-datos": {
       "status": "busy",
@@ -1029,6 +1327,622 @@
       "taskId": "PROCORP-2026-001-T7",
       "details": {
         "from": "IN_PROGRESS",
+        "to": "BLOCKED"
+      }
+    },
+    {
+      "id": "log-1775668223540",
+      "timestamp": "2026-04-08T17:10:23.540Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min."
+      }
+    },
+    {
+      "id": "log-1775668223550",
+      "timestamp": "2026-04-08T17:10:23.550Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775668223551",
+      "timestamp": "2026-04-08T17:10:23.551Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min."
+      }
+    },
+    {
+      "id": "log-1775668223570",
+      "timestamp": "2026-04-08T17:10:23.570Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T7",
+      "details": {
+        "to": "desarrollador-martech",
+        "request": "Implementar landing page optimizada para conversion y configurar secuencia autom"
+      }
+    },
+    {
+      "id": "log-1775668223572",
+      "timestamp": "2026-04-08T17:10:23.572Z",
+      "agent": "desarrollador-martech",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T7",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775668223574",
+      "timestamp": "2026-04-08T17:10:23.574Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T7",
+      "details": {
+        "to": "desarrollador-martech",
+        "request": "Implementar landing page optimizada para conversion y configurar secuencia autom"
+      }
+    },
+    {
+      "id": "log-1775668593985",
+      "timestamp": "2026-04-08T17:16:33.986Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775669480209",
+      "timestamp": "2026-04-08T17:31:20.209Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "REVIEW",
+        "to": "PENDING"
+      }
+    },
+    {
+      "id": "log-1775669480221",
+      "timestamp": "2026-04-08T17:31:20.221Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775669480223",
+      "timestamp": "2026-04-08T17:31:20.223Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min."
+      }
+    },
+    {
+      "id": "log-1775669808686",
+      "timestamp": "2026-04-08T17:36:48.686Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775669808689",
+      "timestamp": "2026-04-08T17:36:48.689Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "to": "creador-video",
+        "request": "Crear guiones y storyboards para 8 Reels de 60seg y Hero Video de 2.5min."
+      }
+    },
+    {
+      "id": "log-1775670576853",
+      "timestamp": "2026-04-08T17:49:36.853Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T6",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775675168958",
+      "timestamp": "2026-04-08T19:06:08.958Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775675168961",
+      "timestamp": "2026-04-08T19:06:08.961Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para abrir Google Flow (labs.google/flow) y producir los videos "
+      }
+    },
+    {
+      "id": "log-1775675242589",
+      "timestamp": "2026-04-08T19:07:22.590Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775675432332",
+      "timestamp": "2026-04-08T19:10:32.332Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "REVIEW",
+        "to": "PENDING"
+      }
+    },
+    {
+      "id": "log-1775675432347",
+      "timestamp": "2026-04-08T19:10:32.347Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775675432351",
+      "timestamp": "2026-04-08T19:10:32.351Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para abrir Google Flow (labs.google/flow) y producir los videos "
+      }
+    },
+    {
+      "id": "log-1775675517490",
+      "timestamp": "2026-04-08T19:11:57.490Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775675716063",
+      "timestamp": "2026-04-08T19:15:16.063Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775675716065",
+      "timestamp": "2026-04-08T19:15:16.065Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para abrir Google Flow (labs.google/flow) y producir los videos "
+      }
+    },
+    {
+      "id": "log-1775675804483",
+      "timestamp": "2026-04-08T19:16:44.484Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775675997346",
+      "timestamp": "2026-04-08T19:19:57.346Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775675997348",
+      "timestamp": "2026-04-08T19:19:57.348Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "INSTRUCCION CRITICA: Tu UNICA tarea es producir videos en Google Flow usando Pla"
+      }
+    },
+    {
+      "id": "log-1775676076017",
+      "timestamp": "2026-04-08T19:21:16.018Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775688336700",
+      "timestamp": "2026-04-08T22:45:36.701Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775688336706",
+      "timestamp": "2026-04-08T22:45:36.706Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "INSTRUCCION CRITICA: Tu UNICA tarea es producir videos en Google Flow usando Pla"
+      }
+    },
+    {
+      "id": "log-1775688409410",
+      "timestamp": "2026-04-08T22:46:49.411Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775750895874",
+      "timestamp": "2026-04-09T16:08:15.874Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "REVIEW",
+        "to": "PENDING"
+      }
+    },
+    {
+      "id": "log-1775750895883",
+      "timestamp": "2026-04-09T16:08:15.883Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775750895885",
+      "timestamp": "2026-04-09T16:08:15.885Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775751039059",
+      "timestamp": "2026-04-09T16:10:39.060Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775751486022",
+      "timestamp": "2026-04-09T16:18:06.022Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775751486025",
+      "timestamp": "2026-04-09T16:18:06.025Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775751649553",
+      "timestamp": "2026-04-09T16:20:49.553Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "BLOCKED"
+      }
+    },
+    {
+      "id": "log-1775751987088",
+      "timestamp": "2026-04-09T16:26:27.089Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775751987092",
+      "timestamp": "2026-04-09T16:26:27.092Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775753012530",
+      "timestamp": "2026-04-09T16:43:32.530Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775753012534",
+      "timestamp": "2026-04-09T16:43:32.534Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775753170558",
+      "timestamp": "2026-04-09T16:46:10.558Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775753439167",
+      "timestamp": "2026-04-09T16:50:39.167Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775753439169",
+      "timestamp": "2026-04-09T16:50:39.169Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775754594655",
+      "timestamp": "2026-04-09T17:09:54.655Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "BLOCKED"
+      }
+    },
+    {
+      "id": "log-1775830243697",
+      "timestamp": "2026-04-10T14:10:43.697Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775830243707",
+      "timestamp": "2026-04-10T14:10:43.707Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775831630982",
+      "timestamp": "2026-04-10T14:33:50.982Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "BLOCKED"
+      }
+    },
+    {
+      "id": "log-1775832740524",
+      "timestamp": "2026-04-10T14:52:20.524Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775832740526",
+      "timestamp": "2026-04-10T14:52:20.526Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775834934897",
+      "timestamp": "2026-04-10T15:28:54.897Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775835091544",
+      "timestamp": "2026-04-10T15:31:31.544Z",
+      "agent": "desarrollador-martech",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T11",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775835091548",
+      "timestamp": "2026-04-10T15:31:31.548Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T11",
+      "details": {
+        "to": "desarrollador-martech",
+        "request": "Tomar todos los clips de video descargados en output/videos/PROCORP-2026-001/ y "
+      }
+    },
+    {
+      "id": "log-1775835306840",
+      "timestamp": "2026-04-10T15:35:06.840Z",
+      "agent": "desarrollador-martech",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T11",
+      "details": {
+        "from": "IN_PROGRESS",
+        "to": "REVIEW"
+      }
+    },
+    {
+      "id": "log-1775838839681",
+      "timestamp": "2026-04-10T16:33:59.682Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
+        "to": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "log-1775838839684",
+      "timestamp": "2026-04-10T16:33:59.684Z",
+      "agent": "orquestador-director",
+      "action": "message_sent",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "to": "creador-video",
+        "request": "Usar Playwright para navegar a Google Flow (labs.google/flow) y generar los vide"
+      }
+    },
+    {
+      "id": "log-1775838929602",
+      "timestamp": "2026-04-10T16:35:29.603Z",
+      "agent": "creador-video",
+      "action": "status_change",
+      "taskId": "PROCORP-2026-001-T10",
+      "details": {
+        "from": "PENDING",
         "to": "BLOCKED"
       }
     }

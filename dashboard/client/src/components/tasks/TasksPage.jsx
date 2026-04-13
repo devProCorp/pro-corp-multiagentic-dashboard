@@ -111,8 +111,20 @@ export default function TasksPage() {
                         {taskIsRunning ? (
                           <><span className="animate-spin inline-block w-3 h-3 border-2 border-white/30 border-t-white rounded-full"></span> Ejecutando...</>
                         ) : (
-                          <><svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ejecutar Agente</>
+                          <><svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> {task.assignedAgent === 'creador-video' ? 'Crear Video (Playwright)' : 'Ejecutar Agente'}</>
                         )}
+                      </button>
+                    )}
+
+                    {/* Re-execute button for REVIEW tasks */}
+                    {task.status === 'REVIEW' && (
+                      <button
+                        onClick={(e) => { e.stopPropagation(); handleStatusChange(task.id, 'PENDING').then(() => handleExecute(task.id)) }}
+                        disabled={taskIsRunning}
+                        className="mt-2 w-full bg-violet-600 hover:bg-violet-700 disabled:bg-gray-700 disabled:text-gray-500 text-white text-xs font-medium py-1.5 rounded-lg transition-colors flex items-center justify-center gap-1.5"
+                      >
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                        {task.assignedAgent === 'creador-video' ? 'Re-crear Video (Playwright)' : 'Re-ejecutar Agente'}
                       </button>
                     )}
 
@@ -187,9 +199,30 @@ export default function TasksPage() {
                 {(isRunning(selectedTask.id) || executing === selectedTask.id) ? (
                   <><span className="animate-spin inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full"></span> Agente ejecutando...</>
                 ) : (
-                  <><svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Ejecutar Agente</>
+                  <><svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> {selectedTask.assignedAgent === 'creador-video' ? 'Crear Video con Playwright + Google Flow' : 'Ejecutar Agente'}</>
                 )}
               </button>
+            )}
+
+            {/* Re-execute button for REVIEW tasks in modal */}
+            {selectedTask.status === 'REVIEW' && (
+              <button
+                onClick={async () => { await handleStatusChange(selectedTask.id, 'PENDING'); handleExecute(selectedTask.id) }}
+                disabled={isRunning(selectedTask.id) || executing === selectedTask.id}
+                className="w-full mb-4 bg-violet-600 hover:bg-violet-700 disabled:bg-gray-700 disabled:text-gray-500 text-white font-medium py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2"
+              >
+                {(isRunning(selectedTask.id) || executing === selectedTask.id) ? (
+                  <><span className="animate-spin inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full"></span> Agente ejecutando...</>
+                ) : (
+                  <><svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> {selectedTask.assignedAgent === 'creador-video' ? 'Re-crear Video (Playwright + Google Flow)' : 'Re-ejecutar Agente'}</>
+                )}
+              </button>
+            )}
+
+            {selectedTask.assignedAgent === 'creador-video' && (
+              <div className="mb-4 bg-violet-900/30 border border-violet-700/50 rounded-lg p-3 text-xs text-violet-300">
+                <span className="font-medium">Playwright habilitado:</span> Este agente abrira un navegador real para crear videos en Google Flow (labs.google/flow) y assets en Canva.
+              </div>
             )}
 
             {selectedTask.status === 'IN_PROGRESS' && (
