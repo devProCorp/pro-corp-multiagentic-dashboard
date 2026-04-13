@@ -2,7 +2,7 @@ import { spawn } from 'child_process'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { getTask, updateTask, createMessage, updateAgentStatus } from './dbService.js'
+import { getTask, getTasks, updateTask, createMessage, updateAgentStatus } from './dbService.js'
 import { parseMarkdownFile } from './fileParser.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -133,6 +133,27 @@ export async function executeTask(taskId) {
 
         updateTask(taskId, { status: 'REVIEW' })
         updateAgentStatus(agentSlug, { status: 'idle', activeTasks: 0 })
+
+        // Auto-trigger dependent tasks
+        const allTasks = getTasks()
+        const dependents = allTasks.filter(t =>
+          t.dependencies &&
+          t.dependencies.includes(taskId) &&
+          t.status === 'PENDING'
+        )
+        for (const dep of dependents) {
+          // Check if ALL dependencies are satisfied (REVIEW or APPROVED or DONE)
+          const allDepsSatisfied = dep.dependencies.every(depId => {
+            const depTask = allTasks.find(t => t.id === depId)
+            return depTask && ['REVIEW', 'APPROVED', 'DONE'].includes(depTask.status)
+          })
+          if (allDepsSatisfied) {
+            console.log(`[EXECUTOR] Auto-triggering dependent task ${dep.id}`)
+            setTimeout(() => executeTask(dep.id).catch(err =>
+              console.error(`[EXECUTOR] Failed to auto-trigger ${dep.id}:`, err.message)
+            ), 2000)
+          }
+        }
 
         resolve({ taskId, status: 'completed', output: output.substring(0, 500), logFile })
       } else {
